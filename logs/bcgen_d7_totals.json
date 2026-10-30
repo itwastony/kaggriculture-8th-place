@@ -1,0 +1,22 @@
+{
+  "shards": 224,
+  "worlds": 2049,
+  "trajectories": 809,
+  "skipped": {
+    "repro": 0,
+    "noseat": 795,
+    "err": 0,
+    "excl": 167,
+    "quads": 744
+  },
+  "per_team": {
+    "DECEM": 211,
+    "DSM": 200,
+    "M & M & P & Q": 127,
+    "Majkel1337": 112,
+    "Victor @ Tufa Labs": 97,
+    "CDE": 41,
+    "Vadim Vasilenko": 16,
+    "Unknown Mother-Goose": 5
+  }
+}

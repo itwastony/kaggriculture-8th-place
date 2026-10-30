@@ -1,0 +1,26 @@
+# produced by runs, downloads and builds
+runs/
+replays/
+data/worlds/
+/artifacts
+/submission
+# checksum list at the root of the release-assets tarball (ASSETS.sha256 is the tracked copy)
+/SHA256SUMS
+engines/*/build/
+engines/*/check/build/
+# outputs of the engine parity checks (engines/kagcore/parity.py; recorded streams and results in engines/*/data/)
+engines/kagcore/parity_result.json
+engines/*/data/
+vendor/kagsim/build/
+*.egg-info/
+__pycache__/
+*.pyc
+*.so
+.venv/
+.DS_Store
+# league bots installed by tools/fetch_league_bots.py (only caretaker and pass_agent are tracked)
+agents/*/
+!agents/caretaker/
+!agents/pass_agent/
+.ruff_cache/
+.pytest_cache/

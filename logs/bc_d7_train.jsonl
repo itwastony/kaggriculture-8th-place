@@ -1,0 +1,3 @@
+{"step_from": 1, "step_to": 1000, "l_unit": 0.31, "l_mkt": 0.13, "l_val": 0.73, "acc_unit": 0.9, "acc_op": 0.93, "acc_mkt": 0.96, "acc_mkt_nz": 0.6, "val_acc_unit": 0.9, "val_acc_op": 0.93, "val_acc_mkt": 0.96, "val_acc_mkt_nz": 0.73}
+{"step_from": 1001, "step_to": 2000, "l_unit": 0.22, "l_mkt": 0.08, "l_val": 0.69, "acc_unit": 0.92, "acc_op": 0.94, "acc_mkt": 0.97, "acc_mkt_nz": 0.67, "val_acc_unit": 0.9, "val_acc_op": 0.93, "val_acc_mkt": 0.97, "val_acc_mkt_nz": 0.75}
+{"step_from": 2001, "step_to": 3000, "l_unit": 0.18, "l_mkt": 0.08, "l_val": 0.67, "acc_unit": 0.94, "acc_op": 0.95, "acc_mkt": 0.97, "acc_mkt_nz": 0.7, "val_acc_unit": 0.9, "val_acc_op": 0.93, "val_acc_mkt": 0.97, "val_acc_mkt_nz": 0.76}

@@ -1,0 +1,19 @@
+opponent,iter_from,iter_to,learner_P
+d6 EMA 140 (init of BC d7),0,19,0.2
+d6 EMA 140 (init of BC d7),20,39,0.3
+d6 EMA 140 (init of BC d7),40,59,0.5
+d6 EMA 140 (init of BC d7),60,79,0.6
+d6 EMA 140 (init of BC d7),80,99,0.6
+d6 EMA 140 (init of BC d7),100,109,0.7
+d4a EMA 370,0,19,0.2
+d4a EMA 370,20,39,0.4
+d4a EMA 370,40,59,0.5
+d4a EMA 370,60,79,0.6
+d4a EMA 370,80,99,0.7
+d4a EMA 370,100,109,0.7
+BC d7 (APPO start),0,19,0.4
+BC d7 (APPO start),20,39,0.7
+BC d7 (APPO start),40,59,0.8
+BC d7 (APPO start),60,79,0.8
+BC d7 (APPO start),80,99,0.9
+BC d7 (APPO start),100,109,0.9

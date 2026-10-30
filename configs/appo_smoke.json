@@ -1,0 +1,7 @@
+{
+  "_comment": "Overrides applied on top of configs/appo_d7b.json by `entry_points/train_appo.py --preset smoke`: a 2-iteration run on one GPU to check that the installation works end to end. It is not a training recipe.",
+  "nnodes": 1,
+  "nproc_per_node": 1,
+  "args": {"--iters": 2, "--workers": 4, "--games": 2, "--gpu-games": 16, "--minibatches": 4, "--compile": 0,
+           "--snap-every": 1, "--save-every": 1, "--anchor-min-games": 10}
+}

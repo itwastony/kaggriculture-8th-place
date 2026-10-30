@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: kagsim
+Version: 0.5.0
+Summary: Bit-exact C++ engine for Kaggle's Kaggriculture (1.32.7), with a batch Python API
+License: Apache-2.0
+Requires-Python: >=3.9
+License-File: LICENSE
+Dynamic: license-file

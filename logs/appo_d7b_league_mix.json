@@ -1,0 +1,15 @@
+{
+  "protocol": "Share of learner trajectories (a game seen from the learning seat; a self game counts twice) by opponent group, summed over APPO d7b iterations 0-109 (the submitted EMA 110). Training games; PFSP shifts the mix during the run. Percentages only.",
+  "share_pct": {
+    "self (current net in both seats)": 26.5,
+    "past (earlier versions, argmax)": 16.5,
+    "best (current anchor)": 3.3,
+    "tapes: sep30": 10.6,
+    "tapes: sep29": 10.4,
+    "tapes: sep28": 10.4,
+    "tapes: sep27": 3.5,
+    "tapes: fast": 10.3,
+    "tapes: weak": 1.4,
+    "101 code bots": 7.2
+  }
+}

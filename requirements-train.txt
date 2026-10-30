@@ -1,0 +1,10 @@
+# Training (BC and APPO) on NVIDIA GPUs. Python 3.11, Linux x86-64.
+# In a fresh environment, install torch from the CUDA 13.0 wheel index first:
+#   pip install --index-url https://download.pytorch.org/whl/cu130 torch==2.13.0
+# then: pip install -r requirements-train.txt
+# The order matters: after a plain torch 2.13.0 from PyPI (requirements.txt), pip counts the +cu130 wheel as already
+# installed and skips it.
+-r requirements.txt
+torch==2.13.0            # +cu130 build (brings triton 3.7.1, nvidia-cudnn-cu13 9.20.0.48, nvidia-nccl-cu13 2.29.7)
+# The GPU game engine (engines/kagrl_cuda) is compiled with nvcc from the CUDA toolkit (we used CUDA 13.3);
+# see scripts/build_engines.sh.

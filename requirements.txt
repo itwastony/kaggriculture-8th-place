@@ -1,0 +1,14 @@
+# Verification, inference (predict.py), export and the CPU engines. Python 3.11.
+# The submitted agent itself needs only numpy (it runs inside Kaggle's own image).
+numpy==2.4.6
+# torch reads checkpoints (export, verify); no GPU is needed here. On Linux, PyPI installs a build with CUDA libraries;
+# the CPU build (pip install --index-url https://download.pytorch.org/whl/cpu torch==2.13.0) also works.
+torch==2.13.0
+kaggle-environments==1.32.7
+pybind11==3.1.0          # build-time: vendor/kagsim and engines/kagcore
+setuptools>=61           # build-time: vendor/kagsim
+# kagsim 0.5.0 is installed from this repository: pip install ./vendor/kagsim (see scripts/build_engines.sh)
+# optional, only for tools/fetch_episodes.py, tools/rebuild_worlds.py and tools/fetch_league_bots.py (Kaggle downloads):
+# kaggle==2.2.4
+# optional, only for docs/make_figures.py:
+# matplotlib==3.11.1

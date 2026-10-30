@@ -1,0 +1,18 @@
+{
+  "_comment": "BC for the final line d7 (rl/bc_train.py), exactly as run: 3,000 steps with a global batch of 2,048 states per step (entry_points/train_bc.py splits it evenly over the GPUs given by --nproc). Initialisation: the actor of d6 EMA 140 with the value towers removed (tools/strip_init.py; the result is shipped as artifacts/checkpoints/final/bc_d7_init_d6_140_pol.pt). Validation: shards whose index is divisible by 50.",
+  "global_batch": 2048,
+  "init_from": {"src": "{CHECKPOINT_DIR}/past/d6_ema_00140.pt", "like": "{CHECKPOINT_DIR}/final/bc_d7_ckpt_003000.pt",
+                "shipped_result": "{CHECKPOINT_DIR}/final/bc_d7_init_d6_140_pol.pt"},
+  "args": {
+    "--data": "{RUN}/bcgen/bc/bc_*.pkl.gz",
+    "--val-mod": 50,
+    "--steps": 3000,
+    "--lr": 1e-4,
+    "--width": 384,
+    "--layers": 8,
+    "--workers": 12,
+    "--save-every": 1000
+  },
+  "out": "{RUN}/bc",
+  "result": "ckpt_003000.pt"
+}

@@ -1,0 +1,6 @@
+{
+  "_comment": "Export of the submitted agent rl_d7b_110 (rl/export_agent.py): NumPy inference, float16 weights, the 4th-land-quadrant rule as in training (--land-inject 248 --land-window 72). After export, line 1 of main.py (a comment holding the absolute checkpoint path) was replaced by '# RL-агент (политика-трансформер, numpy). Чекпойнт: d7b ema_00110, веса float16.' to keep local paths out of the submission.",
+  "ckpt": "{CHECKPOINT_DIR}/final/d7b_ema_00110.pt",
+  "args": {"--dtype": "float16", "--land-inject": "248:72"},
+  "submitted": {"file": "{SUBMISSION_DIR}/rl_d7b_110.tar.gz", "kaggle_submission_id": 56718362}
+}

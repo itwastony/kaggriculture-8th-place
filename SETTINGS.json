@@ -1,0 +1,9 @@
+{
+  "_comment": "Directories used by the entry points (entry_points/). The tools and harness scripts keep fixed paths inside the repository: tools/rebuild_worlds.py (replays/, data/worlds/), harness/tape_worlds.py (replays/worlds/), tools/fetch_league_bots.py (agents/, runs/league_bots_cache/). Relative paths are resolved against the repository root. The training code (rl/appo.py) changes into the repository root, and configs/league_d7.json refers to tape-world pools as data/pools/*.json, so keep DATA_DIR = data unless you also rewrite the league (entry_points/train_appo.py does this automatically when DATA_DIR differs).",
+  "DATA_DIR": "data",
+  "CHECKPOINT_DIR": "artifacts/checkpoints",
+  "SNAPSHOT_POOL_DIR": "artifacts/snapshot_pools",
+  "SUBMISSION_DIR": "submission",
+  "OUTPUT_DIR": "runs",
+  "KAGRL_LIB": "engines/kagrl_cuda/build/libkagrl_cuda.so"
+}

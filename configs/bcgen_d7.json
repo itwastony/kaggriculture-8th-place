@@ -1,0 +1,17 @@
+{
+  "_comment": "Behaviour-cloning demonstrations for the final line d7 (rl/gen_bc_tapes.py). Exactly the arguments of the original run: 224 shards (the shard count fixes the train/validation split; any number of processes can run them); shard i takes the worlds whose index in the sorted file list is i mod 224. Sep 30 games (all 2,049 worlds of data/worlds/d0930b), seats of the 10 teams in configs/bc_teams_d7.txt (the leaderboard top 10 on Sep 30) that had >= 4 land quadrants by step 300; games involving our team are skipped.",
+  "module": "rl.gen_bc_tapes",
+  "nshards": 224,
+  "args": {
+    "--worlds": "{DATA_DIR}/worlds/d0930b/*.json.gz",
+    "--teams-file": "configs/bc_teams_d7.txt",
+    "--min-quads": 4,
+    "--quads-step": 300,
+    "--exclude-names": "Anton Tikhonov"
+  },
+  "out": "{RUN}/bcgen/bc",
+  "expected": {"shards": 224, "trajectories": 809,
+               "per_team": {"DECEM": 211, "DSM": 200, "M & M & P & Q": 127, "Majkel1337": 112, "Victor @ Tufa Labs": 97,
+                            "CDE": 41, "Vadim Vasilenko": 16, "Unknown Mother-Goose": 5},
+               "skipped": {"repro": 0, "noseat": 795, "err": 0, "excl": 167, "quads": 744}}
+}
